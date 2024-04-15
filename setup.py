@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="human-eval",
-    py_modules=["human-eval", "gsm"],
+    py_modules=["human-eval", "gsm", "mbpp"],
     version="1.0",
     description="",
     author="OpenAI",
@@ -21,6 +21,7 @@ setup(
         "console_scripts": [
             "evaluate_functional_correctness = human_eval.evaluate_functional_correctness",
             "gsm_functional_correctness = gsm.evaluate_correctness",
+            "mbpp_functional_correctness = mbpp.evaluate_correctness",
         ]
     }
 )
