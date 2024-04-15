@@ -14,7 +14,7 @@ def entry_point(
 ):
     with open(sample_file, 'r') as f:
         sample = json.load(f)
-    predictions, references = sample['predictions'], sample['references']
+    predictions, references = sample['completions'], sample['references']
     results = compute(
         predictions,
         references,
