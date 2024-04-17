@@ -22,6 +22,7 @@ setup(
             "evaluate_functional_correctness = human_eval.evaluate_functional_correctness",
             "gsm_functional_correctness = gsm.evaluate_correctness",
             "mbpp_functional_correctness = mbpp.evaluate_correctness",
+            "apps_functional_correctness = apps.evaluate_correctness",
         ]
     }
 )
