@@ -98,7 +98,8 @@ def evaluate_functional_correctness(
             sample["passed"] = result[1]["passed"]
             yield sample
 
-    print(combine_results())
+    for item in combine_results():
+        print(item)
     out_file = sample_file + "_results.jsonl"
     print(f"Writing results to {out_file}...")
     write_jsonl(out_file, tqdm.tqdm(combine_results(), total=n_samples))
