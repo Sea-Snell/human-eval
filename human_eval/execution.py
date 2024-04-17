@@ -50,7 +50,6 @@ def check_correctness(problem: Dict, completion: str, timeout: float,
             except TimeoutException:
                 result.append("timed out")
             except BaseException as e:
-                print(e)
                 result.append(f"failed: {e}")
 
             # Needed for cleaning up.
