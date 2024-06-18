@@ -1,5 +1,6 @@
 tqdm
 fire
 numpy
-evaluate==0.4.1
+datasets==2.19.2
+evaluate
 pyext
