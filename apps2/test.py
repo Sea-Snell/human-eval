@@ -8,7 +8,7 @@ import os
 import pprint
 import multiprocessing
 import time
-import .testing_util as test_util
+import apps2.testing_util as test_util
 
 # for timing debugging
 from datetime import datetime, date
