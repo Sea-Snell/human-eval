@@ -15,8 +15,9 @@ def entry_point(
     args.index = 0
     args.debug = True
     args.save = sample_file
-    args.split = split
+    args.split = "test"
     args.stop_early = None
+    args.difficulty = split
     results = eval_and_save_problems(args)
     print_results(results, args)
 
