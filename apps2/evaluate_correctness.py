@@ -2,7 +2,7 @@ from typing import Optional
 import fire
 import sys
 import json
-from test import eval_and_save_problems, print_results
+from .test import eval_and_save_problems, print_results
 import argparse
 
 def entry_point(
