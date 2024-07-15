@@ -219,7 +219,7 @@ def main(args):
     if not args.skip_evals:
         results = eval_and_save_problems(args)
 
-    print_results(results, args)
+    # print_results(results, args)
 
 
 if __name__ == "__main__":
