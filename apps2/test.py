@@ -134,6 +134,8 @@ def eval_and_save_problems(args):
 
     if args.stop_early:
         problems = load_dataset("codeparrot/apps", split=f"{args.split}[{start}:{args.stop_early}]", difficulties=[args.difficulty] if args.difficulty is not None else None)
+    
+    print('PROBLEMS CODES LENS LOG:', len(problems), len(codes), [args.difficulty])
 
     # main eval loop
     for index, problem in enumerate(tqdm(problems)):
