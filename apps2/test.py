@@ -146,9 +146,9 @@ def eval_and_save_problems(args):
             # print("CANNOT FIND OUTPUT_STR FOR", problem)
             continue
         
-        problem["solutions"] = json.loads(problem["solutions"])
+        # problem["solutions"] = json.loads(problem["solutions"])
         problem["input_output"] = json.loads(problem["input_output"])
-        sols = problem["solutions"]
+        # sols = problem["solutions"]
 
         if not os.path.exists(args.save):
             os.makedirs(args.save)
